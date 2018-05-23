@@ -1,0 +1,44 @@
+.navMenu {
+  &--top {
+    @include mq(ns) {
+      // resets nav position on larger screen width devices
+      position: relative;
+      top: auto;
+      right: auto;
+      width: auto;
+    }
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -60%;
+
+    &-item {
+      @include mq(ns) {
+        display: inline-block;
+      }
+      @include mq(ns) {
+        border-bottom: 0;
+      }
+      text-transform: uppercase;
+    }
+  }
+
+  &-toggle {
+    @include mq(ns) {
+      display: none;
+    }
+    z-index: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.is-offcanvas {
+  overflow: hidden;
+  .site-canvas {
+    transform: translateX(-60%);
+  }
+}
