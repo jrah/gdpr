@@ -1,8 +1,13 @@
 body {
   color: $light-purple;
-  font-family: "Nunito", serif;
+  font-family: "Nanum Gothic", serif;
   line-height: 1.5;
 }
+
+:lang(en) {
+  font-family: "Nunito", serif;
+}
+
 
 // h1,
 // h2,
